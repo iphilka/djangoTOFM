@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        <title>Кафедра ТОиФМ</title>
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static "img/TOiFM_logo.svg" %}" alt="Логотип кафедры">
+            <p class="logo_title">
+                Кафедра<br>
+                термообработки<br>
+                и физики металлов
+            </p>
+        </div>
+        <nav>
+            <ul class="main-menu">
+                <li>
+                    <a href="{% url "index" %}">Главная</a>
+                </li>
+                <li>
+                    <a href="">О кафедре</a>
+                </li>
+                <li class="item-conf">
+                    <a href="">Конференции</a>
+                    <ul class="menu-conf">
+                        <li>
+                            <a href="">Уральская школа металловедов-термистов</a>
+                        </li>
+                        <li>
+                            <a href="">Уральская школа-семинар металловедов - молодых ученых</a>
+                        </li>
+                        <li>
+                            <a href="">Материаловедение и металлофизика легких сплавов</a>
+                        </li>
+                        <li>
+                            <a href="">Архив</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="https://vk.com/materialoed"><img src="{% static 'img/vk.png' %}" alt="VK"></a>
+                </li>
+                <li>
+                    <a href="https://t.me/TOFMdepartment"><img src="{% static 'img/telegram.png' %}" alt="Telegram"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/tofm_urfu/"><img src="{% static 'img/instagram.png' %}" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCXMEt2POWU_OaAUeKPsErXA"><img src="{% static 'img/youtube.png' %}" alt="YouTube"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="developer">
+
+        </div>
+    </footer>
+</body>
+</html>

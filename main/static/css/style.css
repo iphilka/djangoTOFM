@@ -1,0 +1,435 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "PFBulletinSansPro-Bold";
+    src: url("../fonts/pfbulletinsanspro-bold.ttf");
+}
+
+@font-face{
+    font-family: "PFBulletinSansPro-Light";
+    src: url("../fonts/pfbulletinsanspro-light.ttf");
+}
+
+@font-face{
+    font-family: "PFBulletinSansPro-Medital";
+    src: url("../fonts/pfbulletinsanspro-medital.ttf");
+}
+
+@font-face{
+    font-family: "PFBulletinSansPro-Redular";
+    src: url("../fonts/pfbulletinsanspro-regular.ttf");
+}
+
+header{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    display: block;
+    width: 150px;
+    margin: 30px;
+}
+
+.logo_title{
+    font-family: "PFBulletinSansPro-Redular", sans-serif;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.main-menu{
+    width: 700px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu a{
+    font-family: "PFBulletinSansPro-Bold";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.main-menu a:hover {
+    background-size: 100% 2px;
+}
+
+.menu-conf{
+    display: none;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    /* left: -100px; */
+    background-color: rgb(255, 102, 0);
+    border-radius: 5px;
+    z-index: 5;
+    width: 400px;
+}
+
+.item-conf{
+    position: relative;
+}
+
+.item-conf:hover .menu-conf{
+    display: block;
+}
+
+.menu-conf li{
+    padding: 20px 35px;
+}
+
+.slider{
+    height: 550px;
+    background-image: url("../img/slider-1.jpg");
+    position: relative;
+    padding: 35px;
+}
+
+.slider h2{
+    font-family: "PFBulletinSansPro-Light";
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 80px;
+
+}
+
+.slider p{
+    color: #ffffff;
+    font-family: "PFBulletinSansPro-Light";
+    width: 800px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.slider .wrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.left-arrow{
+    position: absolute;
+    display: block;
+    height: 100px;
+    left: 75px;
+    top: 220px;
+}
+
+.right-arrow{
+    position: absolute;
+    display: block;
+    height: 100px;
+    right: 75px;
+    top: 220px;
+}
+
+.slider .button{
+    padding: 17px 50px;
+    background-color: rgb(255, 102, 0);
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-family: "PFBulletinSansPro-Light";
+    font-weight: 700;
+    text-align: right;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button-wrapper{
+    margin-top: 65px;
+    text-align: center;
+}
+
+.news .wrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.news ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news li{
+    background-color: rgb(49, 49, 49);
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: "PFBulletinSansPro-Light";
+
+}
+
+.news .text{
+    padding: 15px;
+}
+
+.news img{
+    width: 350px;
+}
+
+footer{
+    background-color: rgb(49, 49, 49);
+
+}
+
+footer .wrapper{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.social{
+    width: 300px;
+    padding: 35px 0;
+}
+
+.social ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img{
+    height: 50px;
+}
+
+.develop a{
+    color: #000000;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+}
+
+.history .wrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.history h1{
+    font-family: "PFBulletinSansPro-Light", sans-serif;
+    font-weight: 700;
+    padding-left: 150px;
+}
+
+.history p{
+    font-family: "PFBulletinSansPro-Light", sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    padding: 0 150px;
+}
+
+.contacts{
+    min-height: 590px;
+    font-family: "PFBulletinSansPro-Light", sans-serif;
+}
+
+.contacts .wrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.contacts p{
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.archive-title{
+    width: 1300px;
+    margin: 0 auto;
+    font-family: "PFBulletinSansPro-Light", sans-serif;
+    font-weight: 700;
+}
+
+.school-metal .wrapper{
+    width: 1300px;
+    margin: 0 auto;
+    font-family: "PFBulletinSansPro-Light", sans-serif;
+}
+
+.school-metal ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.school-metal li{
+    padding: 25px 90px;
+    border-radius: 10px;
+    background: linear-gradient(320deg, rgba(253,29,29,1) 50%, rgba(233,248,32,1) 100%);
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 30px;
+ }
+
+.school-metal a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.school-metal .content{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 17%;
+    background: linear-gradient(320deg, rgb(170, 17, 17) 50%, rgb(184, 196, 24) 100%);
+    border-radius: 10px;
+}
+
+.school-metal .one-book{
+    padding: 25%;
+}
+
+.school-metal li:hover .content{
+    display: block;
+    animation-duration: 0.5s;
+    animation-name: arhive-show;
+}
+
+@keyframes arhive-show{
+    from{
+        opacity: 0;
+        background: linear-gradient(320deg, rgba(253,29,29,1) 50%, rgba(233,248,32,1) 100%);
+
+    }
+    to{
+        opacity: 1;
+        background: linear-gradient(320deg, rgb(170, 17, 17) 50%, rgb(184, 196, 24) 100%);
+    }
+}
+
+.school-term .wrapper{
+    width: 1300px;
+    margin: 0 auto;
+    font-family: "PFBulletinSansPro-Light", sans-serif;
+}
+
+.school-term ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.school-term li{
+    padding: 25px 90px;
+    border-radius: 10px;
+    background: linear-gradient(320deg, rgba(253,29,29,1) 50%, rgba(233,248,32,1) 100%);
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 30px;
+ }
+
+.school-term a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.school-term .content{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 17%;
+    background: linear-gradient(320deg, rgb(170, 17, 17) 50%, rgb(184, 196, 24) 100%);
+    border-radius: 10px;
+}
+
+.school-term .one-book{
+    padding: 25%;
+}
+
+.school-term li:hover .content{
+    display: block;
+    animation-duration: 0.5s;
+    animation-name: arhive-show;
+}
+
+.school-young .wrapper{
+    width: 1300px;
+    margin: 0 auto;
+    font-family: "PFBulletinSansPro-Light", sans-serif;
+}
+
+.school-young ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.school-young li{
+    padding: 25px 90px;
+    border-radius: 10px;
+    background: linear-gradient(320deg, rgba(253,29,29,1) 50%, rgba(233,248,32,1) 100%);
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 30px;
+ }
+
+.school-young a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.school-young .content{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 17%;
+    background: linear-gradient(320deg, rgb(170, 17, 17) 50%, rgb(184, 196, 24) 100%);
+    border-radius: 10px;
+}
+
+.school-young .one-book{
+    padding: 25%;
+}
+
+.school-young li:hover .content{
+    display: block;
+    animation-duration: 0.5s;
+    animation-name: arhive-show;
+}

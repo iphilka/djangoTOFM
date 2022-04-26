@@ -1,0 +1,39 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <section class="slider">
+        <div class="wrapper">
+            <h2>Переходим к смешанному режиму работы</h2>
+            {% load static %}
+            <img class="left-arrow" src="{% static "img/left-arrow.svg" %}" alt="">
+            <img class="right-arrow" src="{% static "img/right-arrow.svg" %}" alt="">
+            <p>
+                С 15 февраля Уральский федеральный университет вернется к привычному очному формату обучения,
+                если этому будет способствовать эпидемиологическая ситуация в регионе.
+            </p>
+            <p>
+                До 1 февраля в вузе сессия — студенты сдают экзамены дистанционно, после чего отправятся на двухнедельные каникулы.
+            </p>
+            <div class="button-wrapper">
+                <a class="button" href="#">Подробнее</a>
+            </div>
+            </div>
+    </section>
+    <section class="news">
+        <div class="wrapper">
+            <ul>
+                {% for item in news %}
+                <li>
+                    <img src="img/news-1.jpg" alt="">
+                    <div class="text">
+                        <h3>{{ item.title }}</h3>
+                        <p>{{ item.content }}</p>
+                        <a href="#">Подробнее</a>
+                        <p>{{ item.datetime }}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+{% endblock %}
