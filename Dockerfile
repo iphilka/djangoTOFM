@@ -10,4 +10,6 @@ COPY ./requirements.txt .
 
 RUN pip install --upgrade pip && pip3 install -r requirements.txt
 
+RUN python manage.py collectstatic --noinput --clear
+
 COPY . .
